@@ -36,13 +36,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
+    # 'corsheaders',
     'api',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -58,10 +58,10 @@ WSGI_APPLICATION = 'todo_mvc.wsgi.application'
 # whitelist will not be used and all origins will be accepted
 # CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ORIGIN_WHITELIST = (
-    # list of origin hostnames that are authorized to make a cross-site HTTP request
-    'localhost:4200',
-)
+# CORS_ORIGIN_WHITELIST = (
+#     # list of origin hostnames that are authorized to make a cross-site HTTP request
+#     'localhost:4200',
+# )
 
 # CORS_ORIGIN_REGEX_WHITELIST = (
 #     '^(https?://)?(\w+\.)?google\.com$',

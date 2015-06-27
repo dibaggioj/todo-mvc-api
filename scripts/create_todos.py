@@ -6,7 +6,7 @@ from api.models import Todo
 todo_1 = Todo(title="First things first")
 todo_1.save()
 
-todo_2 = Todo(title="Finish first thing", is_complete=True)
+todo_2 = Todo(title="Finish first thing", is_completed=True)
 todo_2.save()
 
 todo_3 = Todo(title="Do other things")

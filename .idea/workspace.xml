@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0414a848-f4d2-443c-9162-cba61ca0be94" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/create_todos.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/postman_collections/Todo_MVC.json.postman_collection" afterPath="$PROJECT_DIR$/postman_collections/Todo_MVC.json.postman_collection" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/create_todos.py" afterPath="$PROJECT_DIR$/scripts/create_todos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_mvc/settings.py" afterPath="$PROJECT_DIR$/todo_mvc/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="todo_mvc.iws" />
@@ -31,12 +32,24 @@
     <splitter split-orientation="horizontal" split-proportion="0.38247862">
       <split-first>
         <leaf>
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/todo_mvc/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8044164">
-                  <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/api/migrations/0001_initial.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.54416406">
+                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#24#63#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -57,10 +70,10 @@
         <splitter split-orientation="vertical" split-proportion="0.6495468">
           <split-first>
             <leaf>
-              <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+              <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/api/models.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.3030303">
+                    <state vertical-scroll-proportion="0.0">
                       <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                       <folding>
                         <element signature="e#0#28#0" expanded="true" />
@@ -69,11 +82,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="create_todos.py" pinned="false" current-in-tab="false">
+              <file leaf-file-name="create_todos.py" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/create_todos.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                    <state vertical-scroll-proportion="0.3030303">
+                      <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
                       <folding>
                         <element signature="e#0#43#0" expanded="true" />
                       </folding>
@@ -252,6 +265,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -266,7 +297,7 @@
     <property name="recentsLimit" value="5" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.null" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -493,7 +524,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="todo_mvc.settings" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../virtual_envs/python_2_7_virtual_env/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -543,17 +574,23 @@
       <option name="project" value="LOCAL" />
       <updated>1435435028957</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add create_todos script&#10;move postman collection">
+      <created>1435435476914</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1435435476914</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-319" y="-1080" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.48509052" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.39616615" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5149095" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -561,8 +598,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.60383385" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5985091" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -580,7 +617,8 @@
     <MESSAGE value="initial commit&#10;" />
     <MESSAGE value="add postman collection" />
     <MESSAGE value="install django cors headers" />
-    <option name="LAST_COMMIT_MESSAGE" value="install django cors headers" />
+    <MESSAGE value="add create_todos script&#10;move postman collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="add create_todos script&#10;move postman collection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -667,24 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo_mvc/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8044164">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/create_todos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postman_collections/Todo_MVC.json.postman_collection">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -696,12 +716,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todo_mvc/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3030303">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/create_todos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3030303">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54416406">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
