@@ -14,7 +14,10 @@
 				"a47896ba-cd2b-13f1-b000-a57c33b35671",
 				"c8796238-bb37-96a7-9943-563c9ff2fdb5",
 				"18c7274a-249d-b445-5db8-c6a865f8d737",
-				"9fafb267-fe30-89b4-a946-05f602461fb8"
+				"9fafb267-fe30-89b4-a946-05f602461fb8",
+				"3f09c2f5-d49d-7f18-66ce-a37bfd223d95",
+				"b904c248-5dd6-0b67-2a13-494d98a9e2c8",
+				"b58b3f8c-c81a-28a7-58cf-ce21b09cc3bd"
 			],
 			"collection_name": "Todo_MVC",
 			"collection_owner": "36484",
@@ -43,7 +46,7 @@
 	"remoteLink": "",
 	"public": false,
 	"createdAt": null,
-	"updatedAt": 1435433470441,
+	"updatedAt": 1435457391349,
 	"synced": false,
 	"requests": [
 		{
@@ -56,7 +59,7 @@
 			"data": [
 				{
 					"key": "json",
-					"value": "{\"user\":\"1\",\"title\",\"get todo post setup\"}",
+					"value": "{\"user\":\"1\",\"title\":\"get todo post setup\"}",
 					"type": "text",
 					"enabled": true
 				}
@@ -66,7 +69,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1435433408529,
+			"time": 1435457182594,
 			"name": "Create New Todo",
 			"description": "",
 			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
@@ -98,6 +101,35 @@
 			"description": "",
 			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
 			"responses": [],
+			"synced": false,
+			"owner": "36484",
+			"folder": "882a2aac-835e-3221-b452-f5061e2f159b"
+		},
+		{
+			"id": "3f09c2f5-d49d-7f18-66ce-a37bfd223d95",
+			"headers": "",
+			"url": "http://localhost:8000/api/todos/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "json",
+					"value": "{\"title\":\"get todo post setup\"}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1435457243219,
+			"name": "Create New Todo copy",
+			"description": "",
+			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
+			"responses": [],
 			"synced": false
 		},
 		{
@@ -125,7 +157,9 @@
 			"description": "",
 			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": "36484",
+			"folder": "cd75895b-1fa0-7c8a-47ff-cbd5e754962b"
 		},
 		{
 			"id": "9fafb267-fe30-89b4-a946-05f602461fb8",
@@ -152,7 +186,9 @@
 			"description": "",
 			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
 			"responses": [],
-			"synced": false
+			"synced": false,
+			"owner": "36484",
+			"folder": "882a2aac-835e-3221-b452-f5061e2f159b"
 		},
 		{
 			"id": "a47896ba-cd2b-13f1-b000-a57c33b35671",
@@ -164,7 +200,7 @@
 			"data": [
 				{
 					"key": "json",
-					"value": "{\"user\":\"1\",\"title\",\"continue getting todo post setup\"}",
+					"value": "{\"user\":\"1\",\"title\":\"continue getting todo post setup\"}",
 					"type": "text",
 					"enabled": true
 				}
@@ -174,8 +210,62 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1435433467053,
+			"time": 1435457188146,
 			"name": "Update Todo",
+			"description": "",
+			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b58b3f8c-c81a-28a7-58cf-ce21b09cc3bd",
+			"headers": "",
+			"url": "http://localhost:8000/api/todos/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "json",
+					"value": "{\"title\":\"complete todo post setup\",\"is_completed\":true}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1435457465498,
+			"name": "Complete Todo copy",
+			"description": "",
+			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "b904c248-5dd6-0b67-2a13-494d98a9e2c8",
+			"headers": "",
+			"url": "http://localhost:8000/api/todos/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "json",
+					"value": "{\"title\":\"continue getting todo post setup\"}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1435457397872,
+			"name": "Update Todo copy",
 			"description": "",
 			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
 			"responses": [],
@@ -191,7 +281,7 @@
 			"data": [
 				{
 					"key": "json",
-					"value": "{\"user\":\"1\",\"title\",\"complete todo post setup\"}",
+					"value": "{\"user\":\"1\",\"title\":\"complete todo post setup\",\"isComplete\":true}",
 					"type": "text",
 					"enabled": true
 				}
@@ -201,7 +291,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1435433487650,
+			"time": 1435457204515,
 			"name": "Complete Todo",
 			"description": "",
 			"collectionId": "743168e9-ea15-6fe2-1f82-34a47f234185",
