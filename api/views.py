@@ -1,4 +1,5 @@
 import json
+import simplejson
 from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.views.generic import View
@@ -18,8 +19,14 @@ class TodoService(View):
         return HttpResponse(json.dumps(response), content_type="application/json")
 
     def post(self, request, pk=None):
-        post_json = request.POST.get("json", "")
+        print(request)
+        print(request.POST)
+        print(dict(request.POST.iterlists()))
+        post_json = request.POST.get('data', "")
+        print(post_json)
         dct = json.loads(post_json)
+
+        print(dct)
 
         response = update_or_create_todo(dct)
 
@@ -28,9 +35,8 @@ class TodoService(View):
 
 def get_todos(pk=None):
     def serialize_todo(obj):
-        todo_dct = model_to_dict(obj, fields=['id', 'title', 'isCompleted', 'dateTime'])
-        todo_dct['isCompleted'] = getattr(obj, 'is_completed')
-        todo_dct['dateTime'] = str(getattr(obj, 'date_time'))
+        todo_dct = model_to_dict(obj, fields=['id', 'title', 'is_completed', 'date_time'])
+        todo_dct['date_time'] = str(getattr(obj, 'date_time'))
 
         return todo_dct
 
@@ -67,6 +73,8 @@ def update_todo(json_resp, response):
         error_obj = build_error_obj(status=404, code="Failed", title="Location does not exist", detail=reason)
         response['errors'].append(error_obj)
         return response
+
+    # TODO: handle delete todo
 
     for key in json_resp:
         if hasattr(updated_todo, key):
