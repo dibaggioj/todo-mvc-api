@@ -55,6 +55,8 @@ ROOT_URLCONF = 'todo_mvc.urls'
 
 WSGI_APPLICATION = 'todo_mvc.wsgi.application'
 
+BASE_URL = 'http://localhost:8000'
+
 # whitelist will not be used and all origins will be accepted
 # CORS_ORIGIN_ALLOW_ALL = True
 
